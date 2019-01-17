@@ -15,12 +15,11 @@ vegetables = [
 with open('vegetables.csv', 'w') as f:
 	writer = csv.writer(f)
 	#Write header
-	writer.writerow(['name', 'color', 'length'])
+	writer.writerow(['name', 'color'])
 	#Write data
   
 	 #loop through each vegetable
 	for vegetable in vegetables:
 		name = vegetable['name']
 		color = vegetable['color']
-		length = len(vegetable['name'])
 		writer.writerow([name,color])
